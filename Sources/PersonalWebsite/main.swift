@@ -6,7 +6,10 @@ import Plot
 struct PersonalWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
-        case posts
+        case articles
+        case portfolio
+        case resume
+        case about
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
