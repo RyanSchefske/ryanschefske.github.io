@@ -14,12 +14,17 @@ struct PersonalWebsite: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
-    var name = "PersonalWebsite"
-    var description = "A description of PersonalWebsite"
+    var url = URL(string: "https://ryanschefske.github.io")!
+    var name = "Ryan Schefske"
+    var description = "A blog about Swift and more"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
 
 // This will generate your website using the built-in Foundation theme:
-try PersonalWebsite().publish(withTheme: .foundation)
+try PersonalWebsite().publish(
+    withTheme: .foundation,
+    additionalSteps: [
+        .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false))
+    ]
+)
