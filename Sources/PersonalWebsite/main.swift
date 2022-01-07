@@ -1,6 +1,7 @@
 import Foundation
 import Publish
 import Plot
+import SplashPublishPlugin
 
 // This type acts as the configuration for your website.
 struct PersonalWebsite: Website {
@@ -24,10 +25,17 @@ struct PersonalWebsite: Website {
     var imagePath: Path? { nil }
 }
 
-// This will generate your website using the built-in Foundation theme:
-try PersonalWebsite().publish(
-    withTheme: .foundation,
-    additionalSteps: [
-        .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false))
-    ]
-)
+//try PersonalWebsite().publish(
+//    withTheme: .custom,
+//    additionalSteps: [
+//        .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false)),
+//        .installPlugin(.splash(withClassPrefix: ""))
+//    ]
+//)
+
+try PersonalWebsite().publish(using: [
+  .addMarkdownFiles(),
+  .copyResources(),
+  .generateHTML(withTheme: .custom),
+  .generateSiteMap()
+])
