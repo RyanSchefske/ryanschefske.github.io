@@ -25,17 +25,10 @@ struct PersonalWebsite: Website {
     var imagePath: Path? { nil }
 }
 
-//try PersonalWebsite().publish(
-//    withTheme: .custom,
-//    additionalSteps: [
-//        .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false)),
-//        .installPlugin(.splash(withClassPrefix: ""))
-//    ]
-//)
-
 try PersonalWebsite().publish(using: [
   .addMarkdownFiles(),
   .copyResources(),
   .generateHTML(withTheme: .custom),
-  .generateSiteMap()
+  .generateSiteMap(),
+  .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false))
 ])
