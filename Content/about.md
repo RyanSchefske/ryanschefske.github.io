@@ -18,7 +18,6 @@
 
 <br/>* Trying to spread knowledge the best I can!
 
-
 <br/><br/><br/>
 ### Want to get in touch?
 

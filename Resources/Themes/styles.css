@@ -137,6 +137,12 @@ footer {
     color: #8a8a8a;
 }
 
+blockquote {
+  border-left: 7px solid #0F64B1;
+  margin: 1.5em 5px;
+  padding: 0.5em 10px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
@@ -151,8 +157,9 @@ footer {
         background-color: #333;
     }
 
+/*  Site Top Navigation Color  */
     header {
-        background-color: #000;
+        background-color: #0F64B1;
     }
 }
 
