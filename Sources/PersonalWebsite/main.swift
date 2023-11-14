@@ -25,11 +25,12 @@ struct PersonalWebsite: Website {
     var imagePath: Path? { nil }
 }
 
+// Switch to "Deploy PersonalWebsite" scheme and run project
+// If removed, add "--deploy" launch argument to scheme
 try PersonalWebsite().publish(using: [
   .addMarkdownFiles(),
   .copyResources(),
   .generateHTML(withTheme: .custom),
   .generateSiteMap(),
-  .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "author", useSSH: false))
-//  .deploy(using: .git("https://github.com/RyanSchefske/ryanschefske.github.io.git", branch: "author"))
+  .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false))
 ])
