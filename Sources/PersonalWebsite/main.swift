@@ -30,5 +30,6 @@ try PersonalWebsite().publish(using: [
   .copyResources(),
   .generateHTML(withTheme: .custom),
   .generateSiteMap(),
-  .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "main", useSSH: false))
+  .deploy(using: .gitHub("RyanSchefske/ryanschefske.github.io", branch: "author", useSSH: false))
+//  .deploy(using: .git("https://github.com/RyanSchefske/ryanschefske.github.io.git", branch: "author"))
 ])
