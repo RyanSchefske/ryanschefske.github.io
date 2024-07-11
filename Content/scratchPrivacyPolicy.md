@@ -30,4 +30,4 @@ Ryan Schefske has the discretion to update this privacy policy at any time. When
 ## Contacting Us
 If you have any questions about this Privacy Policy, the practices of this App, or your dealings with this App, please contact us.
 
-This document was last updated on November 7, 2023.
+This document was last updated on July 10, 2024.
