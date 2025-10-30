@@ -21,3 +21,5 @@ let package = Package(
         )
     ]
 )
+
+// Run the normal PersonalWebsite target first, then run the Deploy PersonalWebsite target

@@ -129,7 +129,7 @@ If you have questions or concerns about this Privacy Policy or our data practice
 ## Third-Party Links
 
 Scholarly may contain links to third-party websites or services. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies.
-g
+
 ## Consent
 
 By using Scholarly, you consent to this Privacy Policy and agree to its terms.
