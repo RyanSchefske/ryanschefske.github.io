@@ -43,9 +43,9 @@ Vaulted is built so that only you can access your data. This has serious consequ
 
 Certain features require a paid subscription ("Pro"):
 
-- **Price**: $19.99 per year (pricing may vary by region and is displayed in the App before purchase)
-- **Free Trial**: New subscribers receive a 7-day free trial. You will not be charged if you cancel at least 24 hours before the trial ends.
-- **Auto-Renewal**: Subscriptions automatically renew for successive one-year periods unless cancelled at least 24 hours before the end of the current period. Your Apple ID account is charged for renewal within 24 hours prior to the end of the current period.
+- **Plans**: Pro is offered as a monthly subscription ($1.99 per month) or a yearly subscription ($19.99 per year). Pricing may vary by region and is displayed in the App before purchase.
+- **Free Trial**: New yearly subscribers receive a 7-day free trial; the monthly plan does not include a trial. You will not be charged if you cancel at least 24 hours before the trial ends.
+- **Auto-Renewal**: Subscriptions automatically renew for successive periods of the same length unless cancelled at least 24 hours before the end of the current period. Your Apple ID account is charged for renewal within 24 hours prior to the end of the current period.
 - **Cancellation**: You may cancel at any time in your device's Settings → Apple ID → Subscriptions. Cancellation takes effect at the end of the current billing period.
 - **Refunds**: Payments are processed by Apple. Refund requests are handled by Apple according to App Store policies; we cannot issue refunds directly.
 
