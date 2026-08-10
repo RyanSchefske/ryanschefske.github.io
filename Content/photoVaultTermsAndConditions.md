@@ -1,4 +1,4 @@
-# PhotoVault Terms and Conditions
+# Vaulted Terms and Conditions
 
 **Last Updated: August 6, 2026**
 
@@ -8,7 +8,7 @@
 
 ## Agreement to Terms
 
-Welcome to PhotoVault ("App," "we," "our," or "us"). These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and PhotoVault governing your access to and use of our mobile application.
+Welcome to Vaulted ("App," "we," "our," or "us"). These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Vaulted governing your access to and use of our mobile application.
 
 **BY DOWNLOADING, INSTALLING, ACCESSING, OR USING THE APP, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS.** If you do not agree to these Terms, you must not download, install, or use the App.
 
@@ -16,7 +16,7 @@ Welcome to PhotoVault ("App," "we," "our," or "us"). These Terms and Conditions 
 
 ## 1. Description of Service
 
-PhotoVault is a privacy-focused mobile application that provides:
+Vaulted is a privacy-focused mobile application that provides:
 
 - On-device, encrypted storage for photos and videos behind a passcode
 - Optional biometric (Face ID / Touch ID) unlock
@@ -27,7 +27,7 @@ PhotoVault is a privacy-focused mobile application that provides:
 
 ## 2. Your Passcode and Recovery Code — READ CAREFULLY
 
-PhotoVault is built so that only you can access your data. This has serious consequences you must understand:
+Vaulted is built so that only you can access your data. This has serious consequences you must understand:
 
 - **We cannot reset your passcode.** Your passcode never leaves your device and is not known to us. If you forget it and have no recovery code, the contents of your vault are permanently inaccessible.
 - **We cannot recover your recovery code.** If you enable Cloud Backup, you are shown a recovery code exactly once. We do not store it and cannot regenerate it. If you lose your recovery code and your device, your backup is permanently unrecoverable.
@@ -39,7 +39,7 @@ PhotoVault is built so that only you can access your data. This has serious cons
 
 ## 3. Subscriptions and Payment
 
-### 3.1 PhotoVault Pro
+### 3.1 Vaulted Pro
 
 Certain features require a paid subscription ("Pro"):
 

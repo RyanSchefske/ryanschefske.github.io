@@ -1,4 +1,4 @@
-# PhotoVault Privacy Policy
+# Vaulted Privacy Policy
 
 **Last Updated: August 6, 2026**
 
@@ -8,15 +8,15 @@
 
 ## Introduction
 
-PhotoVault ("we," "our," "us," or the "App") is a private, encrypted photo vault built on a simple principle: **your photos are yours, and nobody else — including us — should ever be able to see them.**
+Vaulted ("we," "our," "us," or the "App") is a private, encrypted photo vault built on a simple principle: **your photos are yours, and nobody else — including us — should ever be able to see them.**
 
-This Privacy Policy explains what information the App handles, how it is protected, and the choices you have. By downloading, installing, or using PhotoVault, you agree to the practices described in this Privacy Policy.
+This Privacy Policy explains what information the App handles, how it is protected, and the choices you have. By downloading, installing, or using Vaulted, you agree to the practices described in this Privacy Policy.
 
 ---
 
 ## 1. The Short Version
 
-- **We do not collect your photos or videos.** Everything you store in PhotoVault is encrypted on your device with a key that never leaves it.
+- **We do not collect your photos or videos.** Everything you store in Vaulted is encrypted on your device with a key that never leaves it.
 - **We do not require an account.** There is no sign-up, no email, no password stored on any server we operate.
 - **We do not use analytics, advertising, or tracking of any kind.** The App contains no third-party SDKs.
 - **We cannot read your backups.** Optional iCloud backups contain only encrypted data that we have no ability to decrypt.
@@ -85,7 +85,7 @@ Pro subscriptions are processed entirely by Apple through the App Store. We neve
 
 ## 8. Children's Privacy
 
-PhotoVault is not directed at children under 13, and we do not knowingly collect personal information from children under 13. Because the App collects no personal information from anyone, no such data exists for us to delete; if you believe a child has used the App inappropriately, removing the App from the device removes all associated data.
+Vaulted is not directed at children under 13, and we do not knowingly collect personal information from children under 13. Because the App collects no personal information from anyone, no such data exists for us to delete; if you believe a child has used the App inappropriately, removing the App from the device removes all associated data.
 
 ---
 
@@ -123,4 +123,4 @@ If you have questions about this Privacy Policy or the App's privacy practices:
 
 ---
 
-*PhotoVault is designed so that your private photos stay private — even from the people who made it.*
+*Vaulted is designed so that your private photos stay private — even from the people who made it.*
