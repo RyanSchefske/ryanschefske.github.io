@@ -29,7 +29,7 @@ This Privacy Policy explains what information the App handles, how it is protect
 The following information exists only on your device and is never transmitted to us:
 
 - **Photos and videos** you import, encrypted with AES-256-GCM before they are written to storage.
-- **Your vault passcode**, which never leaves your device. It is used to derive an encryption key; we do not know it and cannot reset it.
+- **Your vault passcode**, which never leaves your device. Your photos are protected by a randomly generated key; your passcode unlocks that key rather than deriving it. We do not know your passcode and cannot reset it.
 - **Encrypted metadata** (filenames, album membership, original capture dates), protected with the same encryption as your media.
 - **A small amount of unencrypted bookkeeping** in the app's local database: an identifier and the date each item was added to the vault. This is used to sort your library. It never leaves your device and reveals nothing about the contents of a file.
 
@@ -39,7 +39,7 @@ The following information exists only on your device and is never transmitted to
 
 Deleting the App removes your encrypted photos, the app's database, and its settings from your device.
 
-**One exception:** iOS does not always remove Keychain items when an app is deleted, so your saved vault key material can survive a reinstall. It is useless without your passcode, and it never leaves the device or appears in backups. If the App detects that its data is gone but this material remains, it offers to restore from backup or clear it and start fresh.
+**One exception:** iOS does not always remove Keychain items when an app is deleted, so your saved key material can survive a reinstall. That material is stored device-only and is never included in device backups. It cannot be used without either your passcode or a successful Face ID / Touch ID check on that same device (see section 3). If the App detects that its data is gone but this material remains, it offers to restore from backup or clear it and start fresh.
 
 ---
 
@@ -85,7 +85,7 @@ Pro subscriptions are processed entirely by Apple through the App Store. We neve
 - We do **NOT** collect or transmit your photos, videos, or their metadata to any server we operate.
 - We do **NOT** collect your name, email address, or contact information (unless you voluntarily email support).
 - We do **NOT** collect location data.
-- We do **NOT** collect analytics, usage data, or crash reports.
+- We do **NOT** collect analytics or usage data, and the App contains no crash-reporting SDK. (If you have turned on Apple's "Share With App Developers" setting, Apple may send us anonymized crash reports through App Store Connect. You control this in iOS Settings → Privacy & Security → Analytics & Improvements.)
 - We do **NOT** use advertising identifiers or any form of tracking.
 - We do **NOT** sell or share any personal information with third parties.
 
