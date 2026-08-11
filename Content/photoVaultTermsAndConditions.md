@@ -1,6 +1,6 @@
 # Vaulted Terms and Conditions
 
-**Last Updated: August 6, 2026**
+**Last Updated: August 10, 2026**
 
 **Effective Date: August 6, 2026**
 
@@ -76,7 +76,7 @@ Privacy features such as the decoy vault, disguised icons, and the calculator lo
 
 ## 5. Backups and Data Loss
 
-- Cloud Backup is optional and must be enabled and run by you. The App does not back up automatically unless you initiate it.
+- Cloud Backup is optional and must be enabled and run by you. The App does not back up automatically unless you initiate it. You can delete a cloud backup at any time from Settings → Cloud Backup.
 - You are responsible for verifying that backups complete successfully and for testing that you can restore with your recovery code.
 - The App's export feature allows you to retrieve unencrypted copies of your media at any time while your vault is unlocked. We recommend maintaining independent copies of irreplaceable media.
 - **WE ARE NOT LIABLE FOR ANY LOSS OF DATA**, including loss resulting from forgotten passcodes, lost recovery codes, failed or incomplete backups, device failure, deletion of iCloud data, or termination of the App's availability.

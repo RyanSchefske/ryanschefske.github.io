@@ -1,6 +1,6 @@
 # Vaulted Privacy Policy
 
-**Last Updated: August 6, 2026**
+**Last Updated: August 10, 2026**
 
 **Effective Date: August 6, 2026**
 
@@ -28,19 +28,26 @@ This Privacy Policy explains what information the App handles, how it is protect
 
 The following information exists only on your device and is never transmitted to us:
 
-- **Photos and videos** you import, encrypted with AES-256-GCM before they are written to storage. Plaintext media is never saved to disk.
+- **Photos and videos** you import, encrypted with AES-256-GCM before they are written to storage.
 - **Your vault passcode**, which never leaves your device. It is used to derive an encryption key; we do not know it and cannot reset it.
-- **Encrypted metadata** (filenames, album membership, dates), protected with the same encryption as your media.
+- **Encrypted metadata** (filenames, album membership, original capture dates), protected with the same encryption as your media.
+- **A small amount of unencrypted bookkeeping** in the app's local database: an identifier and the date each item was added to the vault. This is used to sort your library. It never leaves your device and reveals nothing about the contents of a file.
+
+**One deliberate exception to on-disk encryption:** when you export or share an item, the app must hand a readable file to iOS. It writes a decrypted copy to a protected temporary folder, which is deleted when the share sheet closes, when the vault locks, and again the next time the app launches. Nothing else ever writes plaintext media to disk.
 - **App preferences** (appearance, lock behavior, disguise settings).
 - **Break-in log entries** (timestamps of failed unlock attempts), stored locally so you can review them.
 
-Deleting the App deletes all of this information from your device.
+Deleting the App removes your encrypted photos, the app's database, and its settings from your device.
+
+**One exception:** iOS does not always remove Keychain items when an app is deleted, so your saved vault key material can survive a reinstall. It is useless without your passcode, and it never leaves the device or appears in backups. If the App detects that its data is gone but this material remains, it offers to restore from backup or clear it and start fresh.
 
 ---
 
 ## 3. Face ID and Biometrics
 
-If you enable biometric unlock, authentication is performed entirely by iOS. The App never sees, stores, or has access to your face or fingerprint data. A device-bound key protected by the system Secure Enclave and Apple's biometric framework is used to unlock your vault; it cannot leave your device.
+If you enable biometric unlock, authentication is performed entirely by iOS. The App never sees, stores, or has access to your face or fingerprint data.
+
+To make this work, a copy of your vault key is stored in the iOS Keychain behind a biometric access control, so it can only be released after a successful Face ID or Touch ID check on this device. The item is marked device-only: it is never included in backups and never syncs to another device. It is invalidated automatically if the device's biometric enrollment changes.
 
 ---
 
@@ -56,9 +63,10 @@ If you enable biometric unlock, authentication is performed entirely by iOS. The
 If you enable Cloud Backup:
 
 - Your encrypted photos, videos, and metadata are uploaded to **your personal iCloud private database**, associated with your Apple ID. We do not operate any servers and cannot access this data.
-- Everything uploaded is **ciphertext** — it was encrypted on your device before upload, and the key needed to decrypt it is protected by your recovery code.
+- **Every file's contents are ciphertext.** Photos, videos, thumbnails, filenames, album names, and album membership are all encrypted on your device before upload and can only be decrypted with your recovery code.
+- **Some bookkeeping is stored alongside each record in readable form**, because the backup needs to know what to replace: a label identifying the record's kind (photo, thumbnail, item details, or album), a random identifier, a change-detection fingerprint, and the encrypted file's size in bytes. This tells anyone with access to your iCloud account how many items you have and roughly how large they are — but nothing about what they show, what they are called, or when they were taken.
 - Your **recovery code** is generated on your device, shown to you once, and never stored or transmitted anywhere by the App. Without it (or your device and passcode), the backup cannot be decrypted by anyone — including us and Apple.
-- Apple's infrastructure necessarily sees standard service metadata (such as the size and number of encrypted records and the timestamps of uploads). It cannot see the contents, names, or nature of your files.
+- Apple's infrastructure additionally sees standard service metadata, such as when uploads occurred.
 
 You can stop backing up at any time. Your encrypted backup remains in your personal iCloud until you remove the App's iCloud data (Settings → [your name] → iCloud → Manage Account Storage) or delete it from within the App.
 
@@ -105,7 +113,7 @@ No security measure is perfect. The strength of your protection also depends on 
 Because we hold no data about you, there is nothing for us to export, correct, or delete on your behalf — you are always in direct control:
 
 - **Access / Export**: Use the in-App export feature to decrypt and share your own media at any time.
-- **Deletion**: Delete individual items in the App, delete the App to remove all local data, and manage your iCloud data in Settings to remove backups.
+- **Deletion**: Delete individual items in the App, or delete the App to remove your local vault. To remove a cloud backup, use **Settings → Cloud Backup → Delete Cloud Backup** in the App; you can also remove the App's data from Settings → [your name] → iCloud → Manage Account Storage.
 
 ---
 
