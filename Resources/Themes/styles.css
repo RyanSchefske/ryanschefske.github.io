@@ -169,3 +169,72 @@ blockquote {
     }
 }
 
+
+/*  Long-form pages (support, privacy policy, terms)
+    The reset above zeroes every margin, and only h1/h2/p get them back — so
+    h3/h4 headings collide with the paragraph above them and lists lose the
+    indent their markers need. These rules scope readable spacing to page
+    content only: `body > .wrapper` excludes the header's own wrapper, and
+    the list classes used by the article/portfolio cards are left alone.  */
+
+body > .wrapper h2 {
+    margin: 44px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+body > .wrapper h3 {
+    margin: 30px 0 8px;
+    font-size: 1.15em;
+    line-height: 1.35;
+}
+
+body > .wrapper h4 {
+    margin: 22px 0 6px;
+    font-size: 1em;
+}
+
+body > .wrapper p {
+    margin-bottom: 14px;
+    line-height: 1.65;
+    max-width: 42em;
+}
+
+body > .wrapper ul:not(.item-list):not(.all-tags):not(.tag-list),
+body > .wrapper ol {
+    margin: 0 0 18px;
+    padding-left: 26px;
+    max-width: 42em;
+}
+
+body > .wrapper li:not(.item-list > li) {
+    margin-bottom: 8px;
+    line-height: 1.65;
+}
+
+body > .wrapper hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+body > .wrapper li > ul,
+body > .wrapper li > ol {
+    margin: 8px 0 0;
+}
+
+/*  Content links need to read as links; the global rule inherits body colour.
+    Article cards keep their own styling.  */
+body > .wrapper p a,
+body > .wrapper li a {
+    color: #0F64B1;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body > .wrapper p a,
+    body > .wrapper li a {
+        color: #6cb3f2;
+    }
+}
